@@ -2,7 +2,7 @@
 
 
 
-#### Step1: Building a new switch board panel with integrated Relay module board
+#### Step1: Building a new switch board panel with integrated Relay module board<br>
 
  Cutting poly-carbonate sheet for switching and drilling holes for mounting relay board.
 
@@ -10,7 +10,7 @@
 
 ![](./images/4 )
 
-
+<br>
 
 Relay Board mounted with screws
 
@@ -18,19 +18,19 @@ Relay Board mounted with screws
 
 ![](./images/3 )
 
-
+<br>
 
 ### Step2: Wiring the 2-way switches with relays using *stair-case* wiring method
 
 ![](./images/5 )
 
-
+<br>
 
 Nodemcu mounted with screws
 
 ![](./images/6 )
 
-
+<br>
 
 Final front-view of the switch board panel. 
 
@@ -42,7 +42,7 @@ Final front-view of the switch board panel.
 
 ##### Arduino Sketch
 
-[sketch](./esp8266_homeautomation.ino) 
+[sketch](./esp8266_homeautomation.ino) <br>
 
 
 
