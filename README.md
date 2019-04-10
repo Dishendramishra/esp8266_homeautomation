@@ -42,7 +42,7 @@ Final front-view of the switch board panel.
 
 ##### Arduino Sketch
 
-[](./esp8266_homeautomation.ino) 
+[sketch](./esp8266_homeautomation.ino) 
 
 
 
