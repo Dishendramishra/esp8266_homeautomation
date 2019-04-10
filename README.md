@@ -48,7 +48,7 @@ Final front-view of the switch board panel.
 
 ##### Android App
 
-App code: 
+App code: [](<https://github.com/Dishendramishra/esp8266_homeautomation>)
 
 App snapshot
 
