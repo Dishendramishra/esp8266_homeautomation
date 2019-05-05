@@ -11,14 +11,13 @@ int turnOffAfter = 0;         // time duration in seconds
 unsigned long timestamp = 0;  // time at which on duration is set
 
 //////////////////////////
-uint8_t fan1        = D0;
+uint8_t fan1        = D5;
 uint8_t fan2        = D1;
-uint8_t tubelight   = D2;
-uint8_t ledBulb     = D3;
-uint8_t waterBell   = D4;
-uint8_t doorLight   = D5;
-uint8_t chandelier  = D6;
-uint8_t socket  	  = D7;
+uint8_t tubelight   = D3;
+uint8_t ledBulb     = D0;
+uint8_t waterBell   = D2;
+uint8_t doorLight   = D6;
+uint8_t chandelier  = D4;
 ///////////////////////////
 
 void setup() {
@@ -32,7 +31,6 @@ void setup() {
   digitalWrite(D4, HIGH);
   digitalWrite(D5, HIGH);
   digitalWrite(D6, HIGH);
-  digitalWrite(D7, HIGH);
   ////////////////////////////
 
   pinMode(fan1, OUTPUT);
@@ -42,7 +40,7 @@ void setup() {
   pinMode(waterBell, OUTPUT);
   pinMode(doorLight, OUTPUT);
   pinMode(chandelier, OUTPUT);
-  pinMode(socket, OUTPUT);
+//  pinMode(socket, OUTPUT);/
 
   WiFi.mode(WIFI_STA);        // setting to station mode only,
   WiFi.begin(ssid, password);
@@ -64,7 +62,9 @@ void setup() {
   server.on("/watertank", toggle_watertank);
   server.on("/doorLight", toggle_doorLight);
   server.on("/chandelier", toggle_chandelier);
-  server.on("/socket", toggle_socket);
+//  server.on("/socket", to/ggle_socket);
+  
+  server.on("/offall",off_all);
 
 //  server.on("/fan.png", fan_image);
 //  server.on("/tubelight.png", tubelight_image);
@@ -134,7 +134,7 @@ void loop() {
 ///////////////////////////////////////////////////////////
 
 void homepage(){
- server.send(200, "text/plain", "Running");
+ server.send(200, "text/plain", "Running\n");
 }
 
 void toggle_fan1() {
@@ -172,7 +172,25 @@ void toggle_chandelier() {
   server.send(204);
 }
 
-void toggle_socket() {
-  digitalWrite(socket, !digitalRead(socket));
-  server.send(204);
+//void toggle_socket() {
+//  digitalWrite(socket, !digitalRead(socket));
+//  server.send(204);
+//}
+
+void off_all(){
+  digitalWrite(fan1, HIGH);
+  delay(100);
+  digitalWrite(fan2, HIGH);
+  delay(100);
+//  digitalWrite(socket, HIGH);/
+//  delay(100);/
+  digitalWrite(chandelier, HIGH);
+  delay(100);
+  digitalWrite(waterBell, HIGH);
+  delay(100);
+  digitalWrite(ledBulb, HIGH);
+  delay(100);
+  digitalWrite(tubelight, HIGH);
+  delay(100);
+  digitalWrite(doorLight, HIGH);
 }
