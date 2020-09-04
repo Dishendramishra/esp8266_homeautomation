@@ -6,35 +6,37 @@
 
  Cutting poly-carbonate sheet for switching and drilling holes for mounting relay board.
 
-![](./images/1 ) 
+<img src="./images/1" style="zoom:15%;" />
 
-![](./images/4 )
+ 
+
+<img src="./images/4" style="zoom:15%;" />
 
 <br>
 
 Relay Board mounted with screws
 
-![](./images/2 )
+<img src="./images/2" style="zoom:15%;" />
 
-![](./images/3 )
+<img src="./images/3" style="zoom:15%;" />
 
 <br>
 
 ### Step2: Wiring the 2-way switches with relays using *stair-case* wiring method
 
-![](./images/5 )
+<img src="./images/5" style="zoom:15%;" />
 
 <br>
 
 Nodemcu mounted with screws
 
-![](./images/6 )
+<img src="./images/6" style="zoom:15%;" />
 
 <br>
 
 Final front-view of the switch board panel. 
 
-![](./images/7 )
+<img src="./images/7" style="zoom:15%;" />
 
 
 
@@ -52,5 +54,5 @@ App code: [https://github.com/Dishendramishra/esp8266_homeautomation](<https://g
 
 App snapshot
 
-![](./images/app_snapshot )
+<img src="./images/app_snapshot" style="zoom:33%;" />
 
